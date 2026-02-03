@@ -1,0 +1,156 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2y8xf5yh2x3s"]
+
+[ext_resource type="Texture2D" uid="uid://c9ldqe3dlfq4i" path="res://assets/sprites/star_white.png" id="1_1"]
+
+[node name="StarField" type="Node2D"]
+
+[node name="Star1" type="Sprite2D" parent="."]
+position = Vector2(584, -473)
+scale = Vector2(0.68, 0.68)
+texture = ExtResource("1_1")
+modulate = Color(0.98, 0.98, 0.98, 1)
+
+[node name="Star2" type="Sprite2D" parent="."]
+position = Vector2(961, -190)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_1")
+modulate = Color(0.94, 0.94, 0.94, 1)
+
+[node name="Star3" type="Sprite2D" parent="."]
+position = Vector2(236, 139)
+scale = Vector2(1.08, 1.08)
+texture = ExtResource("1_1")
+modulate = Color(0.71, 0.71, 0.71, 1)
+
+[node name="Star4" type="Sprite2D" parent="."]
+position = Vector2(505, -126)
+scale = Vector2(0.58, 0.58)
+texture = ExtResource("1_1")
+modulate = Color(0.81, 0.81, 0.81, 1)
+
+[node name="Star5" type="Sprite2D" parent="."]
+position = Vector2(105, 625)
+scale = Vector2(0.52, 0.52)
+texture = ExtResource("1_1")
+modulate = Color(0.88, 0.88, 0.88, 1)
+
+[node name="Star6" type="Sprite2D" parent="."]
+position = Vector2(-657, 599)
+scale = Vector2(1.05, 1.05)
+texture = ExtResource("1_1")
+modulate = Color(0.97, 0.97, 0.97, 1)
+
+[node name="Star7" type="Sprite2D" parent="."]
+position = Vector2(-470, 983)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_1")
+modulate = Color(0.89, 0.89, 0.89, 1)
+
+[node name="Star8" type="Sprite2D" parent="."]
+position = Vector2(466, -315)
+scale = Vector2(1.09, 1.09)
+texture = ExtResource("1_1")
+modulate = Color(0.85, 0.85, 0.85, 1)
+
+[node name="Star9" type="Sprite2D" parent="."]
+position = Vector2(-157, 275)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_1")
+modulate = Color(0.79, 0.79, 0.79, 1)
+
+[node name="Star10" type="Sprite2D" parent="."]
+position = Vector2(-748, 174)
+scale = Vector2(1.12, 1.12)
+texture = ExtResource("1_1")
+modulate = Color(0.9, 0.9, 0.9, 1)
+
+[node name="Star11" type="Sprite2D" parent="."]
+position = Vector2(-566, 872)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("1_1")
+modulate = Color(0.72, 0.72, 0.72, 1)
+
+[node name="Star12" type="Sprite2D" parent="."]
+position = Vector2(34, 799)
+scale = Vector2(1.46, 1.46)
+texture = ExtResource("1_1")
+modulate = Color(0.75, 0.75, 0.75, 1)
+
+[node name="Star13" type="Sprite2D" parent="."]
+position = Vector2(-435, 830)
+scale = Vector2(1.33, 1.33)
+texture = ExtResource("1_1")
+modulate = Color(0.92, 0.92, 0.92, 1)
+
+[node name="Star14" type="Sprite2D" parent="."]
+position = Vector2(89, 4)
+scale = Vector2(1.26, 1.26)
+texture = ExtResource("1_1")
+modulate = Color(0.78, 0.78, 0.78, 1)
+
+[node name="Star15" type="Sprite2D" parent="."]
+position = Vector2(275, -463)
+scale = Vector2(0.87, 0.87)
+texture = ExtResource("1_1")
+modulate = Color(0.76, 0.76, 0.76, 1)
+
+[node name="Star16" type="Sprite2D" parent="."]
+position = Vector2(211, 336)
+scale = Vector2(1.13, 1.13)
+texture = ExtResource("1_1")
+modulate = Color(0.97, 0.97, 0.97, 1)
+
+[node name="Star17" type="Sprite2D" parent="."]
+position = Vector2(-112, 788)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("1_1")
+modulate = Color(0.78, 0.78, 0.78, 1)
+
+[node name="Star18" type="Sprite2D" parent="."]
+position = Vector2(317, 752)
+scale = Vector2(0.99, 0.99)
+texture = ExtResource("1_1")
+modulate = Color(0.76, 0.76, 0.76, 1)
+
+[node name="Star19" type="Sprite2D" parent="."]
+position = Vector2(993, -474)
+scale = Vector2(1.08, 1.08)
+texture = ExtResource("1_1")
+modulate = Color(0.98, 0.98, 0.98, 1)
+
+[node name="Star20" type="Sprite2D" parent="."]
+position = Vector2(226, -294)
+scale = Vector2(0.95, 0.95)
+texture = ExtResource("1_1")
+modulate = Color(0.77, 0.77, 0.77, 1)
+
+[node name="Star21" type="Sprite2D" parent="."]
+position = Vector2(-661, -989)
+scale = Vector2(1.48, 1.48)
+texture = ExtResource("1_1")
+modulate = Color(0.82, 0.82, 0.82, 1)
+
+[node name="Star22" type="Sprite2D" parent="."]
+position = Vector2(-6, -84)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_1")
+modulate = Color(1.0, 1.0, 1.0, 1)
+
+[node name="Star23" type="Sprite2D" parent="."]
+position = Vector2(986, 805)
+scale = Vector2(1.14, 1.14)
+texture = ExtResource("1_1")
+modulate = Color(0.97, 0.97, 0.97, 1)
+
+[node name="Star24" type="Sprite2D" parent="."]
+position = Vector2(-495, 986)
+scale = Vector2(1.23, 1.23)
+texture = ExtResource("1_1")
+modulate = Color(0.92, 0.92, 0.92, 1)
+
+[node name="Star25" type="Sprite2D" parent="."]
+position = Vector2(-371, 879)
+scale = Vector2(0.97, 0.97)
+texture = ExtResource("1_1")
+modulate = Color(0.85, 0.85, 0.85, 1)
+
