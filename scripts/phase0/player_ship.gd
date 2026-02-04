@@ -169,7 +169,7 @@ func _process_mining(delta):
 		var amount = game_state.add_resource("iron", mining_target.IRON_YIELD)
 		if amount < mining_target.IRON_YIELD:
 			# Cargo was full or nearly full
-			pass  # GameState already emits cargo_full signal
+			pass  # Game state already emits cargo_full signal
 
 		stop_mining()
 		mining_target = null

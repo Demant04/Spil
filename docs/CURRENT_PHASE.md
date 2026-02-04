@@ -89,7 +89,7 @@
 ```
 
 **Technical implementation:**
-- GameState autoload singleton (credits, cargo, upgrades)
+- GameStateSingleton autoload singleton (credits, cargo, upgrades)
 - Phase-based script organization (/scripts/phase1/)
 - Procedurally generated sprites (embedded in scripts)
 - Area2D for asteroids and base station collision

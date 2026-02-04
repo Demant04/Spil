@@ -23,7 +23,7 @@ window/size/resizable=true
 
 [autoload]
 
-GameState="*res://scripts/phase1/game_state.gd"
+GameStateSingleton="*res://scripts/phase1/game_state.gd"
 
 [rendering]
 
