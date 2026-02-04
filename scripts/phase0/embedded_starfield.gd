@@ -1,4 +1,4 @@
-extends Sprite2D
+extends TextureRect
 
 const EMBEDDED_PNG := """
 iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAIAAADwf7zUAAAAAXNSR0IArs4c6QAAAIRlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEb
@@ -21556,3 +21556,9 @@ func _ready() -> void:
         push_error("Failed to load embedded PNG: %s" % err)
         return
     texture = ImageTexture.create_from_image(image)
+    texture.repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
+    stretch_mode = TextureRect.STRETCH_TILE
+    size = texture.get_size()
+    var parent_layer := get_parent()
+    if parent_layer is ParallaxLayer:
+        parent_layer.motion_mirroring = texture.get_size()

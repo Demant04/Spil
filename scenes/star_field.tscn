@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/phase0/embedded_starfield.gd" id="1_1"]
 
-[node name="StarField" type="Node2D"]
+[node name="StarField" type="ParallaxBackground"]
 
-[node name="StarfieldBackground" type="Sprite2D" parent="."]
+[node name="StarfieldLayer" type="ParallaxLayer" parent="."]
+
+[node name="StarfieldTexture" type="TextureRect" parent="StarfieldLayer"]
 script = ExtResource("1_1")
-position = Vector2(0, 0)
