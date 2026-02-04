@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bqg3xf5yh2x2r"]
 
-[ext_resource type="Script" path="res://scripts/phase0/player_ship.gd" id="1_1"]
+[ext_resource type="Script" path="res://scripts/phase1/player_ship.gd" id="1_1"]
 [ext_resource type="Script" path="res://scripts/phase0/embedded_ship_sprite.gd" id="2_1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1"]

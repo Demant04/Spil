@@ -1,28 +1,21 @@
-﻿# 🎯 Current Focus: Phase 0 - Foundation
+﻿# 🎯 Current Focus: Phase 1 - Core Mining Loop
 
 **What we're building RIGHT NOW:**
-- [x] Opret Godot projekt (åbn Godot, lav nyt 2D projekt)
-- [x] Basic 2D space scene (sort baggrund, få stjerner som decoration)
-- [x] Player ship sprite + click-to-move input (right-click)
-- [x] Ship bevægelse (acceleration, max speed, rotation mod bevægelsesretning)
-- [x] Kamera følger ship (smooth camera follow)
-- [x] Right-click navigation (click-to-move med NavigationAgent2D)
+- [x] Asteroid field (3-5 asteroids)
+- [x] Click asteroid → ship auto-flies there
+- [x] Mining laser visual + progress
+- [x] Cargo system + HUD
+- [x] Base station in the world
+- [x] Sell flow (Iron → Credits)
+- [x] Simple cargo upgrade (+50)
 
-**Done when:** Du kan flyve rundt i tomt rum og det føles smooth
+**Done when:** Du kan mine Iron → flyve til base → sælge → købe cargo upgrade → mine mere
 
 ---
 
 ## ⛔ DO NOT BUILD YET:
 
-### Phase 1 features (kommer EFTER Phase 0):
-- Mining mechanics
-- Asteroids
-- Resources
-- Base station
-- Economy/credits
-- Upgrades
-
-### Phase 2+ features:
+### Phase 2 features (kommer EFTER Phase 1):
 - Multiple resources
 - Zones
 - Pirates
@@ -31,58 +24,27 @@
 - Outposts
 - Anything else from TODO.md
 
-**If you're tempted to build these:** STOP. Finish Phase 0 first. Test it. Make it feel good.
-
 ---
 
-## Testing Checklist før vi går videre til Phase 1:
+## Testing Checklist før vi går videre til Phase 2:
 
-- [ ] Kan jeg bevæge mig smooth og responsive?
-- [ ] Føles acceleration naturlig (ikke instant teleport)?
-- [ ] Roterer skibet pænt når jeg drejer?
-- [ ] Følger kameraet skibet uden at være rykket?
-- [ ] Kører det uden lag på min computer?
-- [ ] Er koden organiseret og kommenteret?
+- [ ] Føles mining loop tilfredsstillende?
+- [ ] Er cargo HUD tydelig?
+- [ ] Kan jeg altid finde base og sælge uden frustration?
+- [ ] Er progressionen (upgrade) tydelig og tilfredsstillende?
 - [ ] Har jeg testet i mindst 5 minutter?
 
-### Questions to ask yourself:
-- Er det *chill* at flyve rundt?
-- Føles bevægelsen som et rumskib?
-- Ville jeg gerne mine asteroider med denne control?
-
-**If any answer is "no":** Fix it before moving to Phase 1!
-
 ---
 
-## 📝 Notes for Phase 0
+## 📝 Notes for Phase 1
 
 **Keep it simple:**
-- Ship kan bare være en simpel trekant (placeholder sprite OK)
-- Stjerner kan være små hvide dots
-- Fokus er på bevægelse og feel, ikke grafik
-
-**Technical hints:**
-- Brug CharacterBody2D for ship
-- Use `move_and_slide()` for smooth movement
-- Linear interpolation (lerp) for camera smooth follow
-- Max speed cap så skibet ikke bliver ucontrollable
-- Right-click navigation for click-to-move (with pathfinding ready)
+- Asteroids må gerne være simple cirkler
+- Mining timer 3–5 sek per asteroid
+- Én resource: Iron
+- Economy er fast pris (V1)
 
 ---
-
-## ✅ When Phase 0 is DONE:
-
-1. Test thoroughly (play for 10+ minutes)
-2. Commit to git: `git commit -m "Phase 0 complete - Basic movement works"`
-3. Update this file to Phase 1
-4. Commit again: `git commit -m "Starting Phase 1 - Mining Loop"`
-5. THEN start building Phase 1 features
-
----
-
-**Next Phase Preview:** Phase 1 - Core Mining Loop
-- But we're NOT there yet!
-- Finish Phase 0 first!
 
 **Current Status:** 🟡 Implemented, pending playtest
 **Started:** 3. februar 2026
