@@ -2,16 +2,19 @@
 Et hygge projekt – et lille Godot 2D space‑mining prototype.
 
 ## Status (nu)
-- **Phase 0 er FÆRDIG!** Basic scene, stjerner, click‑to‑move (right‑click) og smooth camera follow er testet og godkendt.
-- Klar til Phase 1: Core Mining Loop (mining, asteroids, base station, economy).
+- **Phase 1 implementeret!** Core mining loop med asteroids, base station, sell/buy system.
+- Klar til playtest af mining → sell → upgrade loop.
 
 ## Controls
-- Right‑click: sæt target‑position til click‑to‑move (NavigationAgent2D).
+- **Left‑click på asteroid**: Flyv til asteroid og start mining
+- **Right‑click anywhere**: Manuel bevægelse (afbryder mining)
+- **Flyv til base station**: Åbner sell/upgrade menu
 
 ## Struktur (kort)
-- `scenes/` – Godot‑scener (main, ship, star field)
-- `scripts/` – GDScript (faseopdelt)
-- `assets/` – placeholder sprites (pt. ikke i brug; ship/starfield bruger embedded PNG‑scripts)
+- `scenes/` – Godot‑scener (main, ship, asteroids, base station, HUD)
+- `scripts/phase0/` – Movement og camera
+- `scripts/phase1/` – Mining, economy, base station, HUD
+- `assets/` – placeholder sprites
 - `docs/` – roadmap, regler og fase‑status
 
 ## Docs

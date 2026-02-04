@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6basestation123"]
+
+[ext_resource type="Script" path="res://scripts/phase1/base_station.gd" id="1_base"]
+[ext_resource type="Script" path="res://scripts/phase1/embedded_base_sprite.gd" id="2_sprite"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 80.0
+
+[node name="BaseStation" type="Area2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_base")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+script = ExtResource("2_sprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -60.0
+offset_top = 55.0
+offset_right = 60.0
+offset_bottom = 78.0
+horizontal_alignment = 1
+text = "Space Station"

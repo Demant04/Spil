@@ -1,89 +1,119 @@
-﻿# 🎯 Current Focus: Phase 0 - Foundation
+# 🎯 Current Focus: Phase 1 - Core Mining Loop
 
 **What we're building RIGHT NOW:**
-- [x] Opret Godot projekt (åbn Godot, lav nyt 2D projekt)
-- [x] Basic 2D space scene (sort baggrund, få stjerner som decoration)
-- [x] Player ship sprite + click-to-move input (right-click)
-- [x] Ship bevægelse (acceleration, max speed, rotation mod bevægelsesretning)
-- [x] Kamera følger ship (smooth camera follow)
-- [x] Right-click navigation (click-to-move med NavigationAgent2D)
 
-**Done when:** Du kan flyve rundt i tomt rum og det føles smooth
+### 1.1 Mining Mechanics
+- [x] Asteroid field spawner (3-5 asteroids et sted)
+- [x] Asteroid sprites (simple colored circles OK for V1)
+- [x] Click asteroid → ship flyver derhen automatisk
+- [x] Mining laser visual (line/particles)
+- [x] Mining progressbar (3-5 sek per asteroid)
+- [x] Asteroid giver Iron (første resource)
+- [x] Cargo system: Ship har max capacity (fx 100 units)
+- [x] HUD: viser cargo (Iron: 45/100)
+
+### 1.2 Base & Economy
+- [x] Base station (fysisk objekt i verden)
+- [x] Fly til base → åbner UI menu
+- [x] Sell menu: Iron → Credits (fast pris V1)
+- [x] Credits display i HUD
+- [x] Return to mining field
+
+### 1.3 First Upgrade
+- [x] Upgrade menu på base
+- [x] 1 upgrade: Cargo capacity +50 (koster 500 credits)
+- [x] Køb → cargo max øges
+- [x] Upgrade er persistent (gemmes)
+
+**Done when:** Du kan mine Iron → flyve til base → sælge → købe cargo upgrade → mine mere
 
 ---
 
 ## ⛔ DO NOT BUILD YET:
 
-### Phase 1 features (kommer EFTER Phase 0):
-- Mining mechanics
-- Asteroids
-- Resources
-- Base station
-- Economy/credits
-- Upgrades
+### Phase 2 features (kommer EFTER Phase 1):
+- Multiple resource types (Copper, Crystal)
+- Different zones
+- Zone selector UI
 
-### Phase 2+ features:
-- Multiple resources
-- Zones
+### Phase 3+ features:
 - Pirates
-- Fleet system
+- Combat/weapons
+- Shield system
+- Fleet/multiple ships
 - Automation
 - Outposts
 - Anything else from TODO.md
 
-**If you're tempted to build these:** STOP. Finish Phase 0 first. Test it. Make it feel good.
+**If you're tempted to build these:** STOP. Finish Phase 1 first. Test it. Make it feel good.
 
 ---
 
-## Testing Checklist før vi går videre til Phase 1:
+## Testing Checklist før vi går videre til Phase 2:
 
-- [x] Kan jeg bevæge mig smooth og responsive?
-- [x] Føles acceleration naturlig (ikke instant teleport)?
-- [x] Roterer skibet pænt når jeg drejer?
-- [x] Følger kameraet skibet uden at være rykket?
-- [x] Kører det uden lag på min computer?
-- [x] Er koden organiseret og kommenteret?
-- [x] Har jeg testet i mindst 5 minutter?
+- [ ] Kan jeg klikke på asteroid og skibet flyver derhen?
+- [ ] Starter mining automatisk når skibet ankommer?
+- [ ] Viser mining laser korrekt?
+- [ ] Viser progress bar mining progress?
+- [ ] Får jeg iron i cargo efter mining?
+- [ ] Viser HUD korrekt cargo (Iron: X/100)?
+- [ ] Åbner base menu når jeg flyver til station?
+- [ ] Kan jeg sælge iron for credits?
+- [ ] Viser HUD credits korrekt?
+- [ ] Kan jeg købe cargo upgrade?
+- [ ] Gemmes upgrade efter restart?
+- [ ] Føles hele loopet tilfredsstillende?
 
 ### Questions to ask yourself:
-- Er det *chill* at flyve rundt?
-- Føles bevægelsen som et rumskib?
-- Ville jeg gerne mine asteroider med denne control?
+- Er det *chill* at mine og sælge?
+- Føles mining progression som en belønning?
+- Ville jeg gerne have flere resources og upgrades?
 
-**If any answer is "no":** Fix it before moving to Phase 1!
-
----
-
-## 📝 Notes for Phase 0
-
-**Keep it simple:**
-- Ship kan bare være en simpel trekant (placeholder sprite OK)
-- Stjerner kan være små hvide dots
-- Fokus er på bevægelse og feel, ikke grafik
-
-**Technical hints:**
-- Brug CharacterBody2D for ship
-- Use `move_and_slide()` for smooth movement
-- Linear interpolation (lerp) for camera smooth follow
-- Max speed cap så skibet ikke bliver ucontrollable
-- Right-click navigation for click-to-move (with pathfinding ready)
+**If any answer is "no":** Fix it before moving to Phase 2!
 
 ---
 
-## ✅ When Phase 0 is DONE:
+## 📝 Notes for Phase 1
+
+**Controls:**
+- **Left-click on asteroid** = Navigate to and mine
+- **Right-click anywhere** = Manual movement (cancels mining)
+- **Fly to base station** = Opens sell/upgrade menu
+
+**World Layout:**
+```
+     -800                    0                    +800
+       |                      |                      |
+   BASE STATION           PLAYER START        ASTEROID FIELD
+       [B]                   [P]                  [A][A][A]
+```
+
+**Technical implementation:**
+- GameState autoload singleton (credits, cargo, upgrades)
+- Phase-based script organization (/scripts/phase1/)
+- Procedurally generated sprites (embedded in scripts)
+- Area2D for asteroids and base station collision
+- Line2D for mining laser visual
+
+---
+
+## ✅ When Phase 1 is DONE:
 
 1. Test thoroughly (play for 10+ minutes)
-2. Commit to git: `git commit -m "Phase 0 complete - Basic movement works"`
-3. Update this file to Phase 1
-4. Commit again: `git commit -m "Starting Phase 1 - Mining Loop"`
-5. THEN start building Phase 1 features
+2. Complete the mining loop several times
+3. Buy the cargo upgrade
+4. Verify save/load works
+5. Commit to git: `git commit -m "Phase 1 complete - Core mining loop works"`
+6. Update this file to Phase 2
+7. THEN start building Phase 2 features
 
 ---
 
-**Next Phase Preview:** Phase 1 - Core Mining Loop
+**Next Phase Preview:** Phase 2 - Resources & Zones
+- Multiple resource types (Copper, Crystal)
+- Different zones with different rewards
 - But we're NOT there yet!
-- Finish Phase 0 first!
 
-**Current Status:** ✅ COMPLETE - Playtest godkendt!
-**Started:** 3. februar 2026
-**Completed:** 4. februar 2026
+**Current Status:** 🟡 Implemented, pending playtest
+**Started:** 4. februar 2026
+**Completed:** [Not yet]
