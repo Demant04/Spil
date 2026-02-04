@@ -12,6 +12,9 @@ const STOP_THRESHOLD = 3.0     # Speed below which the ship fully stops
 
 var has_target := false
 
+func _ready():
+	set_process_unhandled_input(true)
+
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
 		var target_position = get_global_mouse_position()
@@ -35,6 +38,13 @@ func _follow_path(delta):
 
 	var next_position = nav_agent.get_next_path_position()
 	var desired_direction = (next_position - global_position)
+	if desired_direction.length() < 1.0:
+		has_target = false
+		velocity = velocity.move_toward(Vector2.ZERO, ACCELERATION * delta)
+		if velocity.length() < STOP_THRESHOLD:
+			velocity = Vector2.ZERO
+		move_and_slide()
+		return
 	if global_position.distance_to(nav_agent.target_position) <= nav_agent.target_desired_distance:
 		has_target = false
 		velocity = velocity.move_toward(Vector2.ZERO, ACCELERATION * delta)
