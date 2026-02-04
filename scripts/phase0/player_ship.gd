@@ -14,7 +14,7 @@ const MINING_RANGE = 60.0      # Distance to start mining
 
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
 @onready var mining_laser: Line2D = $MiningLaser
-@onready var game_state: Node = get_node("/root/GameStateSingleton")
+@onready var game_state: Node = get_node("/root/GameState")
 
 var has_target := false
 
