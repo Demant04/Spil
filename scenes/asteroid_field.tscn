@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5asteroidfield"]
+
+[ext_resource type="Script" path="res://scripts/phase1/asteroid_field.gd" id="1_field"]
+
+[node name="AsteroidField" type="Node2D"]
+position = Vector2(800, 0)
+script = ExtResource("1_field")

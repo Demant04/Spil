@@ -21,6 +21,10 @@ window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/resizable=true
 
+[autoload]
+
+GameState="*res://scripts/phase1/game_state.gd"
+
 [rendering]
 
 renderer/rendering_method="forward_plus"
