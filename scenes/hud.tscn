@@ -48,3 +48,5 @@ stretch = true
 
 [node name="MinimapViewport" type="SubViewport" parent="MinimapContainer/MinimapViewportContainer"]
 size = Vector2i(200, 200)
+transparent_bg = true
+render_target_update_mode = 3
