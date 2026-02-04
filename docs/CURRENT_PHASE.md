@@ -37,13 +37,13 @@
 
 ## Testing Checklist før vi går videre til Phase 1:
 
-- [ ] Kan jeg bevæge mig smooth og responsive?
-- [ ] Føles acceleration naturlig (ikke instant teleport)?
-- [ ] Roterer skibet pænt når jeg drejer?
-- [ ] Følger kameraet skibet uden at være rykket?
-- [ ] Kører det uden lag på min computer?
-- [ ] Er koden organiseret og kommenteret?
-- [ ] Har jeg testet i mindst 5 minutter?
+- [x] Kan jeg bevæge mig smooth og responsive?
+- [x] Føles acceleration naturlig (ikke instant teleport)?
+- [x] Roterer skibet pænt når jeg drejer?
+- [x] Følger kameraet skibet uden at være rykket?
+- [x] Kører det uden lag på min computer?
+- [x] Er koden organiseret og kommenteret?
+- [x] Har jeg testet i mindst 5 minutter?
 
 ### Questions to ask yourself:
 - Er det *chill* at flyve rundt?
@@ -84,6 +84,6 @@
 - But we're NOT there yet!
 - Finish Phase 0 first!
 
-**Current Status:** 🟡 Implemented, pending playtest
+**Current Status:** ✅ COMPLETE - Playtest godkendt!
 **Started:** 3. februar 2026
-**Completed:** [Not yet]
+**Completed:** 4. februar 2026

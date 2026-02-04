@@ -19,7 +19,7 @@
 
 ---
 
-## Phase 0: Foundation ⚙️
+## Phase 0: Foundation ✅ COMPLETE
 **Mål:** Godot projekt setup + basic bevægelse
 
 - [x] Opret Godot projekt + Git repository
@@ -29,7 +29,7 @@
 - [x] Kamera følger ship
 - [x] Right-click navigation (click-to-move med NavigationAgent2D)
 
-**Done when:** Du kan flyve rundt i tomt rum
+**Done when:** Du kan flyve rundt i tomt rum ✅ Playtest godkendt 4. februar 2026
 
 ---
 
@@ -169,11 +169,11 @@
 
 ## 📊 Progress Tracking
 
-**Current Phase:** Phase 0
-**Last Updated:** 3. februar 2026
+**Current Phase:** Phase 1 - Core Mining Loop
+**Last Updated:** 4. februar 2026
 
 ### Milestones
-- [ ] Phase 0 Complete
+- [x] Phase 0 Complete ✅ (4. februar 2026)
 - [ ] Phase 1 Complete (Core Loop Works!)
 - [ ] Phase 2 Complete (Resources & Zones)
 - [ ] Phase 3 Complete (Risk Added)

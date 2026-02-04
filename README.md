@@ -2,8 +2,8 @@
 Et hygge projekt – et lille Godot 2D space‑mining prototype.
 
 ## Status (nu)
-- Phase 0 er implementeret: basic scene, stjerner, click‑to‑move (right‑click) og smooth camera follow.
-- Ingen mining/økonomi endnu (kommer først i Phase 1).
+- **Phase 0 er FÆRDIG!** Basic scene, stjerner, click‑to‑move (right‑click) og smooth camera follow er testet og godkendt.
+- Klar til Phase 1: Core Mining Loop (mining, asteroids, base station, economy).
 
 ## Controls
 - Right‑click: sæt target‑position til click‑to‑move (NavigationAgent2D).
