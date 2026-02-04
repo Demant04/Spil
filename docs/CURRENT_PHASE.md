@@ -3,9 +3,10 @@
 **What we're building RIGHT NOW:**
 - [x] Opret Godot projekt (åbn Godot, lav nyt 2D projekt)
 - [x] Basic 2D space scene (sort baggrund, få stjerner som decoration)
-- [x] Player ship sprite + basic input (WASD/arrows til bevægelse)
-- [x] Ship bevægelse (acceleration, max speed, rotation når du drejer)
+- [x] Player ship sprite + click-to-move input (right-click)
+- [x] Ship bevægelse (acceleration, max speed, rotation mod bevægelsesretning)
 - [x] Kamera følger ship (smooth camera follow)
+- [x] Right-click navigation (click-to-move med NavigationAgent2D)
 
 **Done when:** Du kan flyve rundt i tomt rum og det føles smooth
 

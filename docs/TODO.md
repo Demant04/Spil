@@ -24,9 +24,10 @@
 
 - [x] Opret Godot projekt + Git repository
 - [x] Basic 2D space scene (sort baggrund, få stjerner)
-- [x] Player ship sprite + basic input (WASD/arrows)
-- [x] Ship bevægelse (acceleration, max speed, rotation)
+- [x] Player ship sprite + click-to-move input (right-click)
+- [x] Ship bevægelse (acceleration, max speed, rotation mod bevægelsesretning)
 - [x] Kamera følger ship
+- [x] Right-click navigation (click-to-move med NavigationAgent2D)
 
 **Done when:** Du kan flyve rundt i tomt rum
 
