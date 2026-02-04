@@ -165,9 +165,10 @@ git commit -m "Starting Phase Y"
 
 ## Current Status
 
-**Active Phase:** Phase 0 - Foundation (implemented, awaiting playtest)
-**Last Updated:** 3. februar 2026
-**Next Phase:** Phase 1 - Core Mining Loop (NOT YET!)
+**Active Phase:** Phase 1 - Core Mining Loop
+**Last Updated:** 4. februar 2026
+**Phase 0:** ✅ COMPLETE (4. februar 2026)
+**Next Phase:** Phase 2 - Resources & Zones (NOT YET!)
 
 ---
 

@@ -45,10 +45,11 @@ Spil/
 2. **Only build features from the current phase** - Nothing from future phases
 3. **Follow `docs/DEVELOPMENT_RULES.md`** - These prevent scope creep
 
-**Current Status (as of 2026-02-03):**
-- **Active Phase:** Phase 0 - Foundation (click-to-move ship movement)
-- **Phase 0 Implementation:** Click-to-move navigation, star field, and smooth camera follow are in place.
-- **DO NOT BUILD:** Mining, asteroids, resources, economy, pirates, fleet, automation, or anything from Phases 1-6
+**Current Status (as of 2026-02-04):**
+- **Active Phase:** Phase 1 - Core Mining Loop
+- **Phase 0:** ✅ COMPLETE (playtest godkendt 4. februar 2026)
+- **Phase 1 Focus:** Mining mechanics, asteroids, base station, economy, first upgrade
+- **DO NOT BUILD:** Multiple resources, zones, pirates, fleet, automation, outposts, or anything from Phases 2-6
 
 ### Rule #2: Phase-Driven Development
 
@@ -56,8 +57,8 @@ This project uses **strict phased development**:
 
 | Phase | Focus | Status |
 |-------|-------|--------|
-| 0 | Foundation - Basic ship movement | 🟡 Implemented, needs playtest |
-| 1 | Core Mining Loop - Mine & sell | ⏸️ Not started |
+| 0 | Foundation - Basic ship movement | ✅ COMPLETE (4. feb 2026) |
+| 1 | Core Mining Loop - Mine & sell | 🟡 In progress |
 | 2 | Resources & Zones - Multiple resources | ⏸️ Not started |
 | 3 | Pirates & Risk - Combat mechanics | ⏸️ Not started |
 | 4 | Fleet System - Automation begins | ⏸️ Not started |
@@ -191,8 +192,9 @@ Basic GitHub Actions workflow:
 
 ## Project Status
 
-**Last Updated:** 2026-02-03
-**Current Phase:** Phase 0 - Foundation (implemented, awaiting playtest)
+**Last Updated:** 2026-02-04
+**Current Phase:** Phase 1 - Core Mining Loop
+**Phase 0:** ✅ COMPLETE (playtest godkendt 4. februar 2026)
 **Victory Condition:** Phase 6 complete = 100k credits + 3 ships + 1 outpost + polished gameplay
 
 ## Quick Start for New Claude Sessions
