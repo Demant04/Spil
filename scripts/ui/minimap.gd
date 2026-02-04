@@ -20,11 +20,8 @@ func _ready():
 
 func _process(_delta: float) -> void:
 	_update_references()
+	_update_minimap_size()
 	queue_redraw()
-
-func _notification(what: int) -> void:
-	if what == NOTIFICATION_RESIZED:
-		_update_minimap_size()
 
 func _update_minimap_size() -> void:
 	var viewport := get_viewport()
