@@ -23,8 +23,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with th
 
 ```
 Spil/
-├── .github/workflows/     # GitHub Actions CI configuration
-│   └── blank.yml          # Basic CI workflow
+├── assets/                # Sprites and placeholder art
+├── scenes/                # Godot scenes (main, ship, star field)
+├── scripts/               # GDScript code (phase-based)
+├── project.godot          # Godot project file
 ├── TODO.md                # Complete development roadmap (Phases 0-6)
 ├── DEVELOPMENT_RULES.md   # Critical rules for AI assistants
 ├── CURRENT_PHASE.md       # Current phase focus and constraints
@@ -44,6 +46,7 @@ Spil/
 
 **Current Status (as of 2026-02-03):**
 - **Active Phase:** Phase 0 - Foundation (basic ship movement)
+- **Phase 0 Implementation:** Ship movement, star field, and smooth camera follow are in place.
 - **DO NOT BUILD:** Mining, asteroids, resources, economy, pirates, fleet, automation, or anything from Phases 1-6
 
 ### Rule #2: Phase-Driven Development
@@ -52,7 +55,7 @@ This project uses **strict phased development**:
 
 | Phase | Focus | Status |
 |-------|-------|--------|
-| 0 | Foundation - Basic ship movement | 🔴 In Progress |
+| 0 | Foundation - Basic ship movement | 🟡 Implemented, needs playtest |
 | 1 | Core Mining Loop - Mine & sell | ⏸️ Not started |
 | 2 | Resources & Zones - Multiple resources | ⏸️ Not started |
 | 3 | Pirates & Risk - Combat mechanics | ⏸️ Not started |
@@ -145,26 +148,21 @@ Critical rules that prevent scope creep. Read this if you're ever unsure about w
 ### CURRENT_PHASE.md
 **The most important file.** This is your source of truth for what to build right now. Always read this first.
 
-## Code Organization (When Godot Project Exists)
+## Code Organization (Current)
 
 ```
 /scripts
   /phase0/     # Movement systems
-  /phase1/     # Mining systems
-  /phase2/     # Resource systems
-  ...
 
 /scenes/
-  /ships/
-  /asteroids/
-  /ui/
-  ...
+  main.tscn
+  player_ship.tscn
+  star_field.tscn
 
 /assets/
   /sprites/
-  /sounds/
-  /music/
-  ...
+    ship_placeholder.png
+    star_white.png
 ```
 
 ## Naming Conventions
@@ -191,7 +189,7 @@ Basic GitHub Actions workflow:
 ## Project Status
 
 **Last Updated:** 2026-02-03
-**Current Phase:** Phase 0 - Foundation
+**Current Phase:** Phase 0 - Foundation (implemented, awaiting playtest)
 **Victory Condition:** Phase 6 complete = 100k credits + 3 ships + 1 outpost + polished gameplay
 
 ## Quick Start for New Claude Sessions

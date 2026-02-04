@@ -22,11 +22,11 @@
 ## Phase 0: Foundation ⚙️
 **Mål:** Godot projekt setup + basic bevægelse
 
-- [ ] Opret Godot projekt + Git repository
-- [ ] Basic 2D space scene (sort baggrund, få stjerner)
-- [ ] Player ship sprite + basic input (WASD/arrows)
-- [ ] Ship bevægelse (acceleration, max speed, rotation)
-- [ ] Kamera følger ship
+- [x] Opret Godot projekt + Git repository
+- [x] Basic 2D space scene (sort baggrund, få stjerner)
+- [x] Player ship sprite + basic input (WASD/arrows)
+- [x] Ship bevægelse (acceleration, max speed, rotation)
+- [x] Kamera følger ship
 
 **Done when:** Du kan flyve rundt i tomt rum
 
