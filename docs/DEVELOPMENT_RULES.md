@@ -9,7 +9,7 @@
 ## Rule 1: ONLY Build Current Phase
 
 **Before writing ANY code:**
-1. Open and read `CURRENT_PHASE.md`
+1. Open and read `docs/CURRENT_PHASE.md`
 2. Check which Phase we're in (look at the title)
 3. Only build tasks that have `[ ]` unchecked boxes in that phase
 4. Do NOT build anything from future phases, even if it "makes sense"
@@ -39,12 +39,12 @@
 
 ## Rule 3: Stop and Ask When Phase is Done
 
-**When all `[ ]` are checked in CURRENT_PHASE.md:**
+**When all `[ ]` are checked in docs/CURRENT_PHASE.md:**
 
 1. STOP coding
 2. Tell human: "Phase X is complete! Test it before we continue."
 3. Do NOT automatically start next phase
-4. Wait for human to update CURRENT_PHASE.md
+4. Wait for human to update docs/CURRENT_PHASE.md
 
 **DO NOT:**
 - "Since we're done with Phase 1, let me start Phase 2"
@@ -96,7 +96,7 @@ We're building a **proof of concept**, not production code.
 
 **After each phase:**
 - Human must test for at least 10 minutes
-- Check CURRENT_PHASE.md testing checklist
+- Check docs/CURRENT_PHASE.md testing checklist
 - If anything feels wrong, fix it before next phase
 
 **This prevents:**
@@ -112,12 +112,12 @@ We're building a **proof of concept**, not production code.
 
 ```bash
 # 1. Human tests current phase
-# 2. All checkboxes in CURRENT_PHASE.md are checked
+# 2. All checkboxes in docs/CURRENT_PHASE.md are checked
 # 3. Human commits:
 git add .
 git commit -m "Phase X complete - [brief description]"
 
-# 4. Human updates CURRENT_PHASE.md to next phase
+# 4. Human updates docs/CURRENT_PHASE.md to next phase
 # 5. Human commits again:
 git commit -m "Starting Phase Y"
 
@@ -205,13 +205,13 @@ git commit -m "Starting Phase Y"
 ## For Human Developer
 
 **If AI breaks these rules:**
-1. Remind them to read DEVELOPMENT_RULES.md
+1. Remind them to read docs/DEVELOPMENT_RULES.md
 2. Point to specific rule violated
 3. Ask them to revert and follow rules
 
 **If you want to override:**
 - That's fine! It's your project
-- Just update CURRENT_PHASE.md explicitly
+- Just update docs/CURRENT_PHASE.md explicitly
 - Commit with clear message about why
 
 ---

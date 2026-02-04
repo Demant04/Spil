@@ -26,12 +26,13 @@ Spil/
 ├── assets/                # Sprites and placeholder art
 ├── scenes/                # Godot scenes (main, ship, star field)
 ├── scripts/               # GDScript code (phase-based)
+├── docs/                  # Project docs (rules, roadmap, phase status)
+│  ├── TODO.md             # Complete development roadmap (Phases 0-6)
+│  ├── DEVELOPMENT_RULES.md# Critical rules for AI assistants
+│  ├── CURRENT_PHASE.md    # Current phase focus and constraints
+│  └── CLAUDE.md           # This file
 ├── project.godot          # Godot project file
-├── TODO.md                # Complete development roadmap (Phases 0-6)
-├── DEVELOPMENT_RULES.md   # Critical rules for AI assistants
-├── CURRENT_PHASE.md       # Current phase focus and constraints
-├── README.md              # Simple project readme
-└── CLAUDE.md              # This file
+└── README.md              # Simple project readme
 ```
 
 ## 🚨 CRITICAL: Read This Before Any Work
@@ -40,13 +41,13 @@ Spil/
 
 **Before writing ANY code:**
 
-1. **Read `CURRENT_PHASE.md` first** - This tells you what phase we're in
+1. **Read `docs/CURRENT_PHASE.md` first** - This tells you what phase we're in
 2. **Only build features from the current phase** - Nothing from future phases
-3. **Follow `DEVELOPMENT_RULES.md`** - These prevent scope creep
+3. **Follow `docs/DEVELOPMENT_RULES.md`** - These prevent scope creep
 
 **Current Status (as of 2026-02-03):**
-- **Active Phase:** Phase 0 - Foundation (basic ship movement)
-- **Phase 0 Implementation:** Ship movement, star field, and smooth camera follow are in place.
+- **Active Phase:** Phase 0 - Foundation (click-to-move ship movement)
+- **Phase 0 Implementation:** Click-to-move navigation, star field, and smooth camera follow are in place.
 - **DO NOT BUILD:** Mining, asteroids, resources, economy, pirates, fleet, automation, or anything from Phases 1-6
 
 ### Rule #2: Phase-Driven Development
@@ -67,7 +68,7 @@ This project uses **strict phased development**:
 - ✅ Complete ALL tasks in current phase
 - ✅ Test thoroughly (10+ minutes of gameplay)
 - ✅ Human commits phase completion
-- ✅ Human updates `CURRENT_PHASE.md` to next phase
+- ✅ Human updates `docs/CURRENT_PHASE.md` to next phase
 - ❌ DO NOT auto-start next phase
 - ❌ DO NOT build "just one small thing" from future phases
 - ❌ DO NOT add "future-proofing" or "extensible architecture"
@@ -93,7 +94,7 @@ This is a **proof of concept**, not production code.
 ### When User Asks for New Feature
 
 ```
-1. Check CURRENT_PHASE.md - Is this feature in the current phase?
+1. Check docs/CURRENT_PHASE.md - Is this feature in the current phase?
 
    ✅ YES → Build it
 
@@ -113,7 +114,7 @@ This is a **proof of concept**, not production code.
 1. STOP coding
 2. Tell human: "Phase X is complete! Test it before we continue."
 3. DO NOT automatically start next phase
-4. Wait for human to test and update CURRENT_PHASE.md
+4. Wait for human to test and update docs/CURRENT_PHASE.md
 ```
 
 ### Emergency Stops
@@ -139,13 +140,13 @@ These decisions are **locked** and should not be questioned during V1 developmen
 
 ## Key Files Reference
 
-### TODO.md
+### docs/TODO.md
 Complete development roadmap with all phases detailed. Use this to understand the big picture, but remember: **only build current phase**.
 
-### DEVELOPMENT_RULES.md
+### docs/DEVELOPMENT_RULES.md
 Critical rules that prevent scope creep. Read this if you're ever unsure about what to build.
 
-### CURRENT_PHASE.md
+### docs/CURRENT_PHASE.md
 **The most important file.** This is your source of truth for what to build right now. Always read this first.
 
 ## Code Organization (Current)
@@ -164,6 +165,8 @@ Critical rules that prevent scope creep. Read this if you're ever unsure about w
     ship_placeholder.png
     star_white.png
 ```
+
+**Note:** The current scenes use embedded PNG scripts for the ship and starfield sprites; placeholder assets remain in `assets/` for later use.
 
 ## Naming Conventions
 
@@ -194,11 +197,11 @@ Basic GitHub Actions workflow:
 
 ## Quick Start for New Claude Sessions
 
-1. Read `CURRENT_PHASE.md` to see what phase we're in
+1. Read `docs/CURRENT_PHASE.md` to see what phase we're in
 2. Check which tasks have `[ ]` unchecked in that phase
 3. Only work on those specific tasks
 4. When asking for clarification, reference phase rules
-5. Mark tasks complete in CURRENT_PHASE.md as you finish them
+5. Mark tasks complete in docs/CURRENT_PHASE.md as you finish them
 
 ## Language Notes
 
