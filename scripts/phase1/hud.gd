@@ -46,9 +46,8 @@ func _update_credits_display():
 
 func _on_minimap_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		var viewport_container := $MinimapContainer/MinimapViewportContainer
-		var local_event := minimap_container.make_input_local(event)
-		var local_pos := local_event.position - viewport_container.position
+		var viewport_container: SubViewportContainer = $MinimapContainer/MinimapViewportContainer
+		var local_pos: Vector2 = event.position - viewport_container.position
 		if local_pos.x < 0 or local_pos.y < 0:
 			return
 		if local_pos.x > minimap_viewport.size.x or local_pos.y > minimap_viewport.size.y:

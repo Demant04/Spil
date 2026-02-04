@@ -20,11 +20,8 @@ func _ready():
 
 func _process(_delta: float) -> void:
 	_update_references()
+	_update_minimap_size()
 	queue_redraw()
-
-func _notification(what: int) -> void:
-	if what == NOTIFICATION_RESIZED:
-		_update_minimap_size()
 
 func _update_minimap_size() -> void:
 	var viewport := get_viewport()
@@ -56,7 +53,7 @@ func _draw() -> void:
 	draw_rect(Rect2(Vector2.ZERO, minimap_size), Color(0.2, 0.6, 1, 0.6), false, 1.0)
 
 	if asteroid_field and asteroid_field.has_method("get_asteroids"):
-		var asteroids := asteroid_field.call("get_asteroids")
+		var asteroids: Array = asteroid_field.get_asteroids()
 		for asteroid in asteroids:
 			if asteroid and is_instance_valid(asteroid):
 				draw_circle(world_to_minimap(asteroid.global_position), ASTEROID_RADIUS, ASTEROID_COLOR)
