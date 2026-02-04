@@ -12,6 +12,9 @@ func _ready():
 	player_ship = get_node_or_null(target_path)
 
 	if player_ship == null:
+		player_ship = get_node_or_null("../PlayerShip")
+
+	if player_ship == null:
 		var players = get_tree().get_nodes_in_group("player")
 		if players.size() > 0:
 			player_ship = players[0] as CharacterBody2D
