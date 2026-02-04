@@ -13,7 +13,7 @@ const CARGO_UPGRADE_AMOUNT := 50
 @onready var upgrade_label: Label = $CenterContainer/PanelContainer/VBoxContainer/UpgradeSection/UpgradeLabel
 @onready var upgrade_button: Button = $CenterContainer/PanelContainer/VBoxContainer/UpgradeSection/UpgradeButton
 @onready var close_button: Button = $CenterContainer/PanelContainer/VBoxContainer/CloseButton
-@onready var game_state: Node = get_node("/root/GameState")
+@onready var game_state: Node = get_node("/root/GameStateSingleton")
 
 func _ready():
 	add_to_group("base_menu")
