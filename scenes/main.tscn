@@ -13,7 +13,13 @@ polygons = PackedInt32Array(0, 1, 2, 3)
 [node name="StarField" parent="." instance=ExtResource("1_1")]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+enabled = true
 navigation_polygon = SubResource("NavigationPolygon_1")
+
+[node name="PlayAreaDebug" type="Line2D" parent="."]
+points = PackedVector2Array(-2000, -2000, 2000, -2000, 2000, 2000, -2000, 2000, -2000, -2000)
+width = 2.0
+default_color = Color(0, 1, 0, 0.4)
 
 [node name="PlayerShip" parent="." instance=ExtResource("2_1")]
 
