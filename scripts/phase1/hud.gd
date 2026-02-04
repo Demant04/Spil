@@ -3,12 +3,13 @@ extends CanvasLayer
 
 @onready var cargo_label: Label = $MarginContainer/VBoxContainer/CargoLabel
 @onready var credits_label: Label = $MarginContainer/VBoxContainer/CreditsLabel
+@onready var game_state: Node = get_node("/root/GameState")
 
 func _ready():
 	# Connect to GameState signals
-	GameState.credits_changed.connect(_on_credits_changed)
-	GameState.cargo_changed.connect(_on_cargo_changed)
-	GameState.cargo_full.connect(_on_cargo_full)
+	game_state.credits_changed.connect(_on_credits_changed)
+	game_state.cargo_changed.connect(_on_cargo_changed)
+	game_state.cargo_full.connect(_on_cargo_full)
 
 	# Initial display
 	_update_cargo_display()
@@ -27,9 +28,9 @@ func _on_cargo_full():
 	tween.tween_property(cargo_label, "modulate", Color.WHITE, 0.5)
 
 func _update_cargo_display():
-	var iron = GameState.get_resource_amount("iron")
-	var max_cargo = GameState.cargo_max
+	var iron = game_state.get_resource_amount("iron")
+	var max_cargo = game_state.cargo_max
 	cargo_label.text = "Iron: %d/%d" % [iron, max_cargo]
 
 func _update_credits_display():
-	credits_label.text = "Credits: %d" % GameState.credits
+	credits_label.text = "Credits: %d" % game_state.credits
