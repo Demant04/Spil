@@ -15,5 +15,9 @@ region_enabled = true
 region_rect = Rect2(77, 61, 99, 107)
 scale = Vector2(0.4, 0.4)
 
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 6.0
+target_desired_distance = 8.0
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_1")

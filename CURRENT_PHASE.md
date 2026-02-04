@@ -65,6 +65,7 @@
 - Use `move_and_slide()` for smooth movement
 - Linear interpolation (lerp) for camera smooth follow
 - Max speed cap så skibet ikke bliver ucontrollable
+- Right-click navigation for click-to-move (with pathfinding ready)
 
 ---
 
