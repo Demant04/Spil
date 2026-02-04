@@ -3,7 +3,7 @@ extends CanvasLayer
 
 @onready var cargo_label: Label = $MarginContainer/VBoxContainer/CargoLabel
 @onready var credits_label: Label = $MarginContainer/VBoxContainer/CreditsLabel
-@onready var game_state: Node = get_node("/root/GameState")
+@onready var game_state: Node = get_node("/root/GameStateSingleton")
 
 func _ready():
 	# Connect to GameState signals
