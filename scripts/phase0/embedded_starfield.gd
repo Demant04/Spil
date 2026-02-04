@@ -21556,10 +21556,12 @@ func _ready() -> void:
         push_error("Failed to load embedded PNG: %s" % err)
         return
     texture = ImageTexture.create_from_image(image)
-    set("texture_repeat", CanvasItem.TEXTURE_REPEAT_ENABLED)
-    set("region_enabled", true)
-    var tex_size := texture.get_size()
-    set("region_rect", Rect2(-tex_size, tex_size * 3.0))
+    texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
+    stretch_mode = TextureRect.STRETCH_TILE
+    size = texture.get_size()
+    var parent_layer := get_parent()
+    if parent_layer is ParallaxLayer:
+        parent_layer.motion_mirroring = texture.get_size()
 
 func _process(_delta: float) -> void:
     var camera := get_viewport().get_camera_2d()
