@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6basestation123"]
+[gd_scene format=3 uid="uid://c5cnpetcqcm8a"]
 
 [ext_resource type="Script" path="res://scripts/phase1/base_station.gd" id="1_base"]
 [ext_resource type="Script" path="res://scripts/phase1/embedded_base_sprite.gd" id="2_sprite"]
