@@ -1,4 +1,5 @@
 extends Node
+class_name GameState
 # Phase 1: Global game state singleton (autoload)
 # Manages credits, cargo, upgrades, and persistence
 
