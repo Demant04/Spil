@@ -1,11 +1,11 @@
 ﻿# 🎯 Current Focus: Phase 0 - Foundation
 
 **What we're building RIGHT NOW:**
-- [ ] Opret Godot projekt (åbn Godot, lav nyt 2D projekt)
-- [ ] Basic 2D space scene (sort baggrund, få stjerner som decoration)
-- [ ] Player ship sprite + basic input (WASD/arrows til bevægelse)
-- [ ] Ship bevægelse (acceleration, max speed, rotation når du drejer)
-- [ ] Kamera følger ship (smooth camera follow)
+- [x] Opret Godot projekt (åbn Godot, lav nyt 2D projekt)
+- [x] Basic 2D space scene (sort baggrund, få stjerner som decoration)
+- [x] Player ship sprite + basic input (WASD/arrows til bevægelse)
+- [x] Ship bevægelse (acceleration, max speed, rotation når du drejer)
+- [x] Kamera følger ship (smooth camera follow)
 
 **Done when:** Du kan flyve rundt i tomt rum og det føles smooth
 
@@ -65,6 +65,7 @@
 - Use `move_and_slide()` for smooth movement
 - Linear interpolation (lerp) for camera smooth follow
 - Max speed cap så skibet ikke bliver ucontrollable
+- Right-click navigation for click-to-move (with pathfinding ready)
 
 ---
 
@@ -82,6 +83,6 @@
 - But we're NOT there yet!
 - Finish Phase 0 first!
 
-**Current Status:** 🔴 In Progress
+**Current Status:** 🟡 Implemented, pending playtest
 **Started:** 3. februar 2026
 **Completed:** [Not yet]

@@ -1,12 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8h4xf5yh2x4t"]
+[gd_scene load_steps=5 format=3 uid="uid://b8h4xf5yh2x4t"]
 
 [ext_resource type="PackedScene" uid="uid://d2y8xf5yh2x3s" path="res://scenes/star_field.tscn" id="1_1"]
 [ext_resource type="PackedScene" uid="uid://bqg3xf5yh2x2r" path="res://scenes/player_ship.tscn" id="2_1"]
 [ext_resource type="Script" path="res://scripts/phase0/smooth_camera.gd" id="3_1"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_1"]
+vertices = PackedVector2Array(-2000, -2000, 2000, -2000, 2000, 2000, -2000, 2000)
+polygons = PackedInt32Array(0, 1, 2, 3)
+
 [node name="Main" type="Node2D"]
 
 [node name="StarField" parent="." instance=ExtResource("1_1")]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_1")
 
 [node name="PlayerShip" parent="." instance=ExtResource("2_1")]
 
