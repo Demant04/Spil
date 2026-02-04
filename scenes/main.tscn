@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c7basemenu12345" path="res://scenes/base_menu.tscn" id="7_menu"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_1"]
-vertices = PackedVector2Array(-2000, -2000, 2000, -2000, 2000, 2000, -2000, 2000)
+vertices = PackedVector2Array(-20000, -20000, 20000, -20000, 20000, 20000, -20000, 20000)
 polygons = [PackedInt32Array(0, 1, 2, 3)]
 
 [node name="Main" type="Node2D"]
@@ -21,7 +21,7 @@ enabled = true
 navigation_polygon = SubResource("NavigationPolygon_1")
 
 [node name="PlayAreaDebug" type="Line2D" parent="."]
-points = PackedVector2Array(-2000, -2000, 2000, -2000, 2000, 2000, -2000, 2000, -2000, -2000)
+points = PackedVector2Array(-20000, -20000, 20000, -20000, 20000, 20000, -20000, 20000, -20000, -20000)
 width = 2.0
 default_color = Color(0, 1, 0, 0.4)
 
