@@ -21549,19 +21549,21 @@ BQ1t1cJFRa2v0OfBzABTpFSfoQ2/d4oxdnbObuyc/D+VFSfiTpL0vAAAAABJRU5ErkJggg==
 """
 
 func _ready() -> void:
-	var image := Image.new()
-	var data := Marshalls.base64_to_raw(EMBEDDED_PNG)
-	var err := image.load_png_from_buffer(data)
-	if err != OK:
-		push_error("Failed to load embedded PNG: %s" % err)
-		return
-	texture = ImageTexture.create_from_image(image)
-	texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
-	region_enabled = true
-	var tex_size := texture.get_size()
-	region_rect = Rect2(-tex_size, tex_size * 3.0)
+    var image := Image.new()
+    var data := Marshalls.base64_to_raw(EMBEDDED_PNG)
+    var err := image.load_png_from_buffer(data)
+    if err != OK:
+        push_error("Failed to load embedded PNG: %s" % err)
+        return
+    texture = ImageTexture.create_from_image(image)
+    texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
+    stretch_mode = TextureRect.STRETCH_TILE
+    size = texture.get_size()
+    var parent_layer := get_parent()
+    if parent_layer is ParallaxLayer:
+        parent_layer.motion_mirroring = texture.get_size()
 
 func _process(_delta: float) -> void:
-	var camera := get_viewport().get_camera_2d()
-	if camera:
-		global_position = camera.global_position
+    var camera := get_viewport().get_camera_2d()
+    if camera:
+        global_position = camera.global_position
