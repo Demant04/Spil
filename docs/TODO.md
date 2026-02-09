@@ -37,27 +37,27 @@
 **Mål:** Et skib kan mine og sælge
 
 ### 1.1 Mining Mechanics
-- [ ] Asteroid field spawner (3-5 asteroids et sted)
-- [ ] Asteroid sprites (simple colored circles OK for V1)
-- [ ] Click asteroid → ship flyver derhen automatisk
-- [ ] Mining laser visual (line/particles)
-- [ ] Mining progressbar (3-5 sek per asteroid)
-- [ ] Asteroid giver Iron (første resource)
-- [ ] Cargo system: Ship har max capacity (fx 100 units)
-- [ ] HUD: viser cargo (Iron: 45/100)
+- [x] Asteroid field spawner (3-5 asteroids et sted)
+- [x] Asteroid sprites (simple colored circles OK for V1)
+- [x] Click asteroid → ship flyver derhen automatisk
+- [x] Mining laser visual (line/particles)
+- [x] Mining progressbar (3-5 sek per asteroid)
+- [x] Asteroid giver Iron (første resource)
+- [x] Cargo system: Ship har max capacity (fx 100 units)
+- [x] HUD: viser cargo (Iron: 45/100)
 
 ### 1.2 Base & Economy
-- [ ] Base station (fysisk objekt i verden)
-- [ ] Fly til base → åbner UI menu
-- [ ] Sell menu: Iron → Credits (fast pris V1)
-- [ ] Credits display i HUD
-- [ ] Return to mining field
+- [x] Base station (fysisk objekt i verden)
+- [x] Fly til base → åbner UI menu
+- [x] Sell menu: Iron → Credits (fast pris V1)
+- [x] Credits display i HUD
+- [x] Return to mining field
 
 ### 1.3 First Upgrade
-- [ ] Upgrade menu på base
-- [ ] 1 upgrade: Cargo capacity +50 (koster 500 credits)
-- [ ] Køb → cargo max øges
-- [ ] Upgrade er persistent (gemmes)
+- [x] Upgrade menu på base
+- [x] 1 upgrade: Cargo capacity +50 (koster 500 credits)
+- [x] Køb → cargo max øges
+- [x] Upgrade er persistent (gemmes)
 
 **Done when:** Du kan mine Iron → flyve til base → sælge → købe cargo upgrade → mine mere
 
@@ -170,7 +170,7 @@
 ## 📊 Progress Tracking
 
 **Current Phase:** Phase 1 - Core Mining Loop
-**Last Updated:** 4. februar 2026
+**Last Updated:** 9. februar 2026
 
 ### Milestones
 - [x] Phase 0 Complete ✅ (4. februar 2026)
