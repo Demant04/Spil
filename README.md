@@ -2,8 +2,8 @@
 Et hygge projekt – et lille Godot 2D space‑mining prototype.
 
 ## Status (nu)
-- **Phase 1 implementeret!** Core mining loop med asteroids, base station, sell/buy system.
-- Klar til playtest af mining → sell → upgrade loop.
+- **Phase 1 implementeret** med mining loop, base station economy, cargo-upgrade og ny minimap-navigation.
+- Klar til playtest af mining → sell → upgrade loop før Phase 2.
 
 ## Controls
 - **Left‑click på asteroid**: Flyv til asteroid og start mining
@@ -11,9 +11,10 @@ Et hygge projekt – et lille Godot 2D space‑mining prototype.
 - **Flyv til base station**: Åbner sell/upgrade menu
 
 ## Struktur (kort)
-- `scenes/` – Godot‑scener (main, ship, asteroids, base station, HUD)
+- `scenes/` – Godot‑scener (main, ship, asteroids, base station, HUD, minimap)
 - `scripts/phase0/` – Movement og camera
 - `scripts/phase1/` – Mining, economy, base station, HUD
+- `scripts/ui/` – UI-komponenter (fx minimap)
 - `assets/` – placeholder sprites
 - `docs/` – roadmap, regler og fase‑status
 

@@ -114,6 +114,6 @@
 - Different zones with different rewards
 - But we're NOT there yet!
 
-**Current Status:** 🟡 Implemented, pending playtest
+**Current Status:** 🟡 Implemented incl. minimap improvements, pending playtest
 **Started:** 4. februar 2026
 **Completed:** [Not yet]
